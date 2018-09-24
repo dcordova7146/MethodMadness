@@ -14,6 +14,7 @@ public class TestFile {
             System.out.println(sumUpTo(100));
             System.out.println(sumUpTo(0));
             primePrinter(10);
+            System.out.println(datestr("3/14/2000"));
 
         }
 
