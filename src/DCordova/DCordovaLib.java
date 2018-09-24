@@ -64,7 +64,7 @@ public class DCordovaLib {
     }
 
     /**
-     *
+     * This method will list as many prime numbers as you ask for in the imput
      * @param num the upper limit for how many prime numbers you wish printed
      * @return returning a list of the first prime numbers up until num
      */
@@ -81,12 +81,6 @@ public class DCordovaLib {
         System.out.println(list);
 
     }
-
-    /**
-     *
-     * @param num
-     * @return
-     */
     public static boolean checkprime(int num){
         if( num < 2){
             return false;
@@ -98,13 +92,21 @@ public class DCordovaLib {
         }
         return true;
     }
-
+    
+    /**
+    *This method takes a date in a mm/dd/yyyy format and turns it into mm-dd-yyyy 
+    *@param str input a string in the format mm/dd/yyyy
+    *@return returns a string that changes the / in the input into -
+    */
 
     public static String datestr(String str){
         String format = "";
         format = str.substring(0,2);
         format += "-";
-        format = str.substring()
+        format += str.substring(3,5);
+        format += "-";
+        format += str.substring(6);
+        return format;
     }
 
 
