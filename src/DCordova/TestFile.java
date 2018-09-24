@@ -12,8 +12,9 @@ public class TestFile {
             System.out.println(cutOut("catcatcat", "cat"));
             System.out.println(sumUpTo(2));
             System.out.println(sumUpTo(100));
-            System.out.println(sumUpTo(  0));
-            //System.out.println(checkprime(  3));
+            System.out.println(sumUpTo(0));
+            primePrinter(10);
+
         }
 
 

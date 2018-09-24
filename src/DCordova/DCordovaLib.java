@@ -68,15 +68,17 @@ public class DCordovaLib {
      * @param num the upper limit for how many prime numbers you wish printed
      * @return returning a list of the first prime numbers up until num
      */
-    /**
+
     public static void primePrinter(int num){
         String list = "";
         for(int i = 1;i != num; i ++){
             boolean isprime = checkprime(i);
             if(isprime == true){
-                list = integer.parseInt(i)
+                int x = i;
+                list += String.valueOf(x) + ", ";
             }
         }
+        System.out.println(list);
 
     }
 
@@ -95,6 +97,14 @@ public class DCordovaLib {
             }
         }
         return true;
+    }
+
+
+    public static String datestr(String str){
+        String format = "";
+        format = str.substring(0,2);
+        format += "-";
+        format = str.substring()
     }
 
 
